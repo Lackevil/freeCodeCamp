@@ -1,0 +1,103 @@
+/* Reset */
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+}
+
+a {
+	color: inherit;
+}
+
+button {
+	background: none;
+}
+
+/* Variables */
+
+:root {
+	--bg: #1b1b32;
+	--input-bg: #0a0a23;
+	--border-color: #3b3b4f;
+	--text-color: #f5f6f7;
+}
+
+/* Global */
+
+body {
+	font-family: sans-serif;
+	color: var(--text-color);
+	background: var(--bg);
+}
+
+h1,
+p {
+	text-align: center;
+	margin: 30px 0;
+}
+
+form {
+	margin: 0 auto;
+	width: 60vw;
+	min-width: 300px;
+	max-width: 500px;
+}
+
+input,
+textarea,
+select {
+	width: 100%;
+	margin: 10px 0;
+	background: var(--input-bg);
+	padding: 5px 5px;
+	color: #fff;
+}
+
+.inline {
+	width: unset;
+}
+
+label {
+	display: block;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+fieldset {
+	padding: 30px 0;
+	border: 0;
+	border-bottom: 3px solid var(--border-color);
+}
+
+fieldset:last-of-type {
+	border-bottom: 0;
+}
+
+button[type='submit'] {
+	min-width: 300px;
+	font-size: 20px;
+	display: block;
+	color: inherit;
+	margin: 20px auto;
+	background-color: var(--border-color);
+	padding: 5px 0;
+	border: 1px solid var(--text-color);
+}
