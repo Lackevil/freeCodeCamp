@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Nazar Pasechnyi" />
+		<meta name="description" content="Survey Form by Nazar Pasechnyi" />
+		<title>Survey From</title>
+		<!-- CSS Styles -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1 id="title">Front-end news</h1>
+		<p id="description">The latest front-end news</p>
+		<form action="#" method="#" id="survey-form">
+			<fieldset>
+				<label for="name" id="name-label">
+					Name
+					<input
+						type="text"
+						name="name"
+						id="name"
+						placeholder="Enter your name"
+						required
+					/>
+				</label>
+				<label for="email" id="email-label">
+					Email
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="Enter your Email"
+						required
+					/>
+				</label>
+				<label for="number" id="number-label">
+					Age <small>(optional)</small>
+					<input
+						type="number"
+						name="age"
+						id="number"
+						min="13"
+						max="120"
+						placeholder="Age "
+					/>
+				</label>
+				<label for="dropdown">
+					What's your level now ?
+					<select name="role" id="dropdown">
+						<option value="" disabled selected>Select current role</option>
+						<option value="1">Trainee</option>
+						<option value="2">Junior</option>
+						<option value="3">Middle</option>
+						<option value="4">Senior</option>
+						<option value="4">Other</option>
+					</select>
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Would you recommend us to a friend?</legend>
+				<label for="recommend-to-friend">
+					<input
+						type="radio"
+						name="recommend-to-friend"
+						id="recommend-to-friend"
+						value="Definitely"
+					/>
+					Definitely
+				</label>
+				<label for="maybe">
+					<input
+						type="radio"
+						name="recommend-to-friend"
+						id="maybe"
+						value="maybe"
+					/>
+					Maybe
+				</label>
+				<label for="not-sure">
+					<input
+						type="radio"
+						name="recommend-to-friend"
+						id="not-sure"
+						value="not-sure"
+					/>
+					Not sure
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>
+					What would you like to see improved?
+					<small>(Check all that apply)</small>
+				</legend>
+				<label for="html">
+					<input type="checkbox" name="html" id="html" value="html" />
+					HTML
+				</label>
+				<label for="css">
+					<input type="checkbox" name="css" id="css" value="css" />
+					CSS
+				</label>
+				<label for="js">
+					<input type="checkbox" name="js" id="js" value="js" />
+					JS
+				</label>
+				<label for="react">
+					<input type="checkbox" name="react" id="react" value="react" />
+					React
+				</label>
+				<label for="vue">
+					<input type="checkbox" name="vue" id="vue" value="vue" />
+					Vue
+				</label>
+				<label for="angular">
+					<input type="checkbox" name="angular" id="angular" value="angular" />
+					Angular
+				</label>
+				<label for="tailwind">
+					<input
+						type="checkbox"
+						name="tailwind"
+						id="tailwind"
+						value="tailwind"
+					/>
+					Tailwind
+				</label>
+				<label for="nextjs">
+					<input type="checkbox" name="nextjs" id="nextjs" value="nextjs" />
+					NextJS
+				</label>
+				<label for="vite">
+					<input type="checkbox" name="vite" id="vite" value="vite" />
+					Vite
+				</label>
+				<label for="docker">
+					<input type="checkbox" name="docker" id="docker" value="docker" />
+					Docker
+				</label>
+				<label for="vscode">
+					<input type="checkbox" name="vscode" id="vscode" value="vscode" />
+					VSCode
+				</label>
+				<label for="comment">
+					Any comments or suggestions?
+					<textarea
+						name="comment"
+						id="comment"
+						cols="30"
+						rows="5"
+						placeholder="Enter your comment here..."
+					></textarea>
+				</label>
+			</fieldset>
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</body>
+</html>

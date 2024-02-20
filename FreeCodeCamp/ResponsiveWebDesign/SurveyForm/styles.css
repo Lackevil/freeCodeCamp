@@ -1,0 +1,140 @@
+/* ------- Reset CSS ------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+button {
+	background: none;
+}
+
+/* ------- Reset CSS ------- */
+
+/* ------- Global ------- */
+
+body {
+	padding: 20px 10px;
+	font-family: sans-serif;
+	color: #fff;
+	background: url('img/bg-detail.svg') no-repeat bottom, #0d1b2a;
+	background-attachment: fixed;
+}
+
+*::placeholder {
+	color: #acc0d8;
+}
+
+/* ------- Global ------- */
+
+h1,
+p {
+	text-align: center;
+	margin: 20px 0;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+form {
+	max-width: 620px;
+	margin: 0 auto;
+	background-color: #1b263b;
+	border-radius: 3px;
+	padding: clamp(25px, 5vw, 50px) clamp(20px, 5vw, 45px);
+}
+
+label {
+	display: block;
+	font-size: 18px;
+	padding: 2px 0;
+}
+
+legend {
+	font-size: 18px;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	background-color: #415a77;
+	padding: 10px 8px;
+	margin-top: 15px;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 3px;
+}
+
+select {
+	color: #fff;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	width: unset;
+	margin-top: unset;
+}
+
+textarea {
+	resize: vertical;
+}
+
+fieldset {
+	margin-top: 30px;
+}
+
+form fieldset:first-child {
+	margin-top: 0px;
+}
+
+fieldset > *:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+/* Submit Button */
+
+button[type='submit'] {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 3px;
+	color: #fff;
+	background-color: #415a77;
+	transition: opacity 0.2s ease;
+	margin-top: 30px;
+}
+
+button[type='submit']:hover {
+	opacity: 0.9;
+}
