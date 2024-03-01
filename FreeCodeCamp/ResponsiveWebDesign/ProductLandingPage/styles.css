@@ -1,0 +1,318 @@
+/* -------- Reset CSS -------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+button {
+	background: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+}
+
+/* -------- Reset CSS -------- */
+
+/* -------- Variables -------- */
+
+:root {
+	--accent-color: #823329;
+	--accent-color2: #efd9ce;
+}
+
+/* -------- Variables -------- */
+
+/* -------- Global -------- */
+
+body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+/* -------- Global -------- */
+
+/* -------- Header -------- */
+
+#header {
+	/* height: 60px; */
+	background-color: var(--accent-color2);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 20px;
+	position: fixed;
+	width: 100%;
+	padding: 10px 0;
+}
+
+#logo {
+	font-size: 27px;
+}
+
+#logo a {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	font-weight: 600;
+	color: var(--accent-color);
+}
+
+#nav-bar {
+}
+
+#nav-bar ul {
+	display: flex;
+	gap: clamp(20px, 5vw, 40px);
+}
+
+#nav-bar ul li {
+}
+
+#nav-bar ul li a {
+	font-size: 18px;
+}
+
+#nav-bar ul li a:hover {
+	color: var(--accent-color);
+	text-decoration: underline;
+}
+
+/* -------- Header -------- */
+
+/* -------- Main -------- */
+
+#main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 120px 10px 0;
+}
+
+/* -------- Main -------- */
+
+/* -------- Form -------- */
+
+#form {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+#form h2 {
+}
+
+#form input {
+	width: 80vw;
+	max-width: 250px;
+	border: 1px solid #333;
+	padding: 5px;
+}
+
+#submit {
+	background-color: var(--accent-color);
+	max-width: 200px;
+	padding: 8px 20px;
+	font-size: 21px;
+	color: var(--accent-color2);
+	text-transform: uppercase;
+}
+
+#submit:hover {
+	opacity: 0.8;
+}
+
+/* -------- Form -------- */
+
+/* -------- Features -------- */
+
+#features {
+	margin-top: clamp(60px, 5vw, 100px);
+}
+
+#features ul {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+#features ul li {
+	display: flex;
+	align-items: center;
+	gap: clamp(30px, 5vw, 60px);
+}
+
+#features img {
+}
+
+#features ul li img {
+	max-width: 70px;
+	fill: red;
+}
+
+#features h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+#features h3 p {
+}
+
+/* -------- Features -------- */
+
+/* -------- Video -------- */
+
+#video-block {
+	margin-top: clamp(60px, 5vw, 100px);
+	display: flex;
+	justify-content: center;
+}
+
+#video-block iframe {
+	width: 100%;
+	max-width: 600px;
+}
+
+/* -------- Video -------- */
+
+/* -------- Pricing -------- */
+
+#pricing {
+	margin-top: clamp(60px, 5vw, 100px);
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+#pricing-item {
+	flex: 0 1 33.333%;
+	border: 1px solid #333;
+}
+
+#pricing-item h4 {
+	background-color: var(--accent-color2);
+	padding: 10px 0;
+	text-align: center;
+	font-weight: 600;
+}
+
+#pricing-item div {
+	padding: 20px;
+	text-align: center;
+}
+
+#pricing-item h5 {
+	font-size: 26px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+#pricing-item ul {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#pricing-item li {
+}
+
+#pricing-item button {
+	padding: 5px 10px;
+	background-color: var(--accent-color);
+	color: var(--accent-color2);
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+#pricing-item button:hover {
+	opacity: 0.8;
+}
+
+/* -------- Pricing -------- */
+
+/* -------- Footer -------- */
+
+#footer {
+	background-color: var(--accent-color2);
+	max-width: 1000px;
+	margin: 50px auto 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	gap: 10px;
+}
+
+#footer ul {
+	display: flex;
+	gap: 20px;
+}
+
+#footer ul li {
+}
+
+#footer ul li a {
+}
+
+#footer p {
+	font-size: 14px;
+	color: var(--accent-color);
+}
+
+/* -------- Footer -------- */
+
+@media (max-width: 481px) {
+	#pricing {
+		flex-direction: column;
+	}
+
+	#features ul li {
+		flex-direction: column;
+	}
+
+	#features ul li {
+		align-items: flex-start;
+	}
+}
